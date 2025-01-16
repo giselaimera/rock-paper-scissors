@@ -1,11 +1,9 @@
-Rock, Paper, Scissors Game
+# 🎮 Rock, Paper, Scissors Game
+### Overview
 
-Overview
+This project is a simple browser-based implementation of the classic "Rock, Paper, Scissors" game, where you compete against the computer in a best-of-five match.
 
-This is a simple interactive implementation of the classic "Rock, Paper, Scissors" game, built using HTML, CSS , and JavaScript.
-The game allows a user to play 5 rounds against the computer and displays the results of each round along with the final score.
-
-How to Play
+### 🚀 How to Play
 
 1. Open the index.html file in your browser.
 
@@ -18,3 +16,14 @@ How to Play
 5. The winner of each round will be displayed in the console.
 
 6. After 5 rounds, the final score and winner will be displayed in the console.
+
+### 📂 Project Structure
+- index.html:
+Contains the game interface, including a button to start the game.
+- script.js:
+Holds the game logic, such as the scoring system and the computer's random choices.
+- style.css
+Contains the styling of the interface 
+- README.md:
+Project documentation (this file).
+
