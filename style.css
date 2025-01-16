@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    background-color: chocolate;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    font-weight: 400;
+    font-style: italic;
+    color: blue;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
