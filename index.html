@@ -25,6 +25,32 @@
         return "Invalid Choice!";
     }
   }
+
+  function playGame() {
+    function playRound(humanChoice, computerChoice) {
+      if (humanChoice === computerChoice) {
+        console.log("It is a tie!");
+      } else if (humanChoice === "Paper" && computerChoice === "Rock") {
+        console.log("You win. Paper beats Rock!");
+        humanScore++;
+        console.log(humanScore);
+      } else if (humanChoice === "Scissors" && computerChoice === "Paper") {
+        console.log("You win. Scissors beats Paper!");
+        humanScore++;
+      } else if (humanChoice === "Rock" && computerChoice === "Scissors") {
+        console.log("You win. Rock beats Scissors!");
+        humanScore++;
+      } else {
+        console.log(`You lose! ${computerChoice} beats ${humanChoice}!`);
+      }
+    }
+  }
   let humanScore = 0;
   let computerScore = 0;
+  for (let i = 1; i <= 5; i++) {
+    console.log(`Round ${i}:`);
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+    playRound(humanChoice, computerChoice);
+  }
 </script>
