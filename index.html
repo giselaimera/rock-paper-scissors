@@ -10,5 +10,19 @@
         return "Scissors";
     }
   }
-  console.log(getComputerChoice());
+  function getHumanChoice() {
+    let humanChoice = prompt("Enter Rock, Paper, or Scissor :")
+      .trim()
+      .toLowerCase();
+    switch (humanChoice) {
+      case "rock":
+        return "Rock";
+      case "paper":
+        return "Paper";
+      case "scissors":
+        return "Scissors";
+      default:
+        return "Invalid Choice!";
+    }
+  }
 </script>
