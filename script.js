@@ -13,6 +13,19 @@
 //creating a div for displaying results/score
 const result=document.createElement("div");
 const score=document.createElement("div")
+result.textContent = "Result: ";
+score.textContent = "Score: You: 0, Computer: 0";
+
+// Styling the result and score divs
+result.style.fontSize = "20px";
+result.style.marginTop = "20px";
+result.style.fontWeight = "bold";
+result.style.color = "#333";
+
+score.style.fontSize = "18px";
+score.style.marginTop = "10px";
+score.style.fontWeight = "normal";
+score.style.color = "#333";
  //using Math.floor and Math.random to get the computer choice
  function getComputerChoice() {
     let computerChoice = Math.floor(Math.random() * 3) + 1;
@@ -50,8 +63,7 @@ const score=document.createElement("div")
          result.textContent=`You lose! ${computerChoice} beats ${humanChoice}!`;
         computerScore++;
       }
-    }
-    
+      updateScore();
     //deciding on the winner and displaying the scores
     if (humanScore===SCORE_MAX || computerScore===SCORE_MAX){
       if (humanScore > computerScore) {
@@ -61,8 +73,8 @@ const score=document.createElement("div")
       } else {
         result.textContent = `It's a tie! Final score: You: ${humanScore}, Computer: ${computerScore}`;
       }
-  
-    
+      disableButtons();
+    }
   }
 
   //selecting the elements
