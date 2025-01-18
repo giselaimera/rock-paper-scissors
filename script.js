@@ -49,19 +49,7 @@
         computerScore++;
       }
     }
-    //run the game for 5 rounds getting both the user input and the computer choice
-    for (let i = 1; i <= 5; i++) {
-      console.log(`Round ${i}:`);
-      const humanChoice = getHumanChoice();
-      if (humanChoice == "Invalid Choice!") {
-        console.log("Choose either Rock, Paper, or Scissor! Retry!");
-        i--;
-        continue;
-      }
-      const computerChoice = getComputerChoice();
-
-      playRound(humanChoice, computerChoice);
-    }
+    
     //deciding on the winner and displaying the scores
     if (humanScore > computerScore) {
       console.log(
