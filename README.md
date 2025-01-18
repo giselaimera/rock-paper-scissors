@@ -7,15 +7,13 @@ This project is a simple browser-based implementation of the classic "Rock, Pape
 
 1. Open the index.html file in your browser.
 
-2. Click the Start Game button to begin.
-
-3. Enter your choice (Rock, Paper, or Scissors) when prompted.
+2. Click on your choice (Rock, Paper, or Scissors).
 
 4. The computer will randomly choose its option.
 
-5. The winner of each round will be displayed in the console.
+5. The winner of each round will be displayed in the result.
 
-6. After 5 rounds, the final score and winner will be displayed in the console.
+6. After 5 rounds, the final score and winner will be displayed.
 
 ### 📂 Project Structure
 - index.html:
